@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Forms</title>
+
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+    <h2>Demo on HTML Forms</h2>
+
+    <!-- Registration Form -->
+    <form id="registrationForm"
+          action="https://www.abcd.com/register"
+          method="get">
+
+        <label for="fullname">Fullname</label>
+        <br>
+
+        <input type="text"
+               placeholder="Fullname"
+               id="fullname"
+               name="fullname">
+
+        <br><br>
+
+        <label for="email">EmailId</label>
+        <br>
+
+        <input type="text"
+               placeholder="Emailid"
+               id="email"
+               name="email">
+
+        <br><br>
+
+        <input type="submit"
+               value="Register"
+               id="register"
+               name="register">
+
+    </form>
+
+    <hr>
+
+    <!-- Login Form -->
+    <form id="loginForm"
+          action="https://www.abcd.com/login"
+          method="post">
+
+        <label for="username">Enter Username</label>
+        <br>
+
+        <input type="text"
+               placeholder="Username"
+               id="username"
+               name="username">
+
+        <br><br>
+
+        <label for="password">Enter Password</label>
+        <br>
+
+        <input type="password"
+               placeholder="Password"
+               id="password"
+               name="password">
+
+        <br><br>
+
+        <input type="submit"
+               value="Log In"
+               id="login"
+               name="login">
+
+    </form>
+
+</body>
+
+</html>
