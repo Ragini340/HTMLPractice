@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML5 Input Elements</title>
+
+    <link rel="icon" href="logo.png">
+</head>
+
+<body id="pageBody">
+
+    <h2>Demo on HTML5 Input Elements</h2>
+
+    <form id="form" action="test">
+
+        <!-- Email -->
+        <label for="email">Enter Email</label>
+        <br>
+
+        <input type="email"
+               id="email"
+               name="email">
+
+        <br><br>
+
+        <!-- URL -->
+        <label for="url">Enter URL</label>
+        <br>
+
+        <input type="url"
+               id="url"
+               name="url">
+
+        <br><br>
+
+        <!-- Date -->
+        <label for="date">Select Date</label>
+        <br>
+
+        <input type="date"
+               id="date"
+               name="date">
+
+        <br><br>
+
+        <!-- Time -->
+        <label for="time">Select Time</label>
+        <br>
+
+        <input type="time"
+               id="time"
+               name="time">
+
+        <br><br>
+
+        <!-- Date and Time -->
+        <label for="datetime">Select Date & Time</label>
+        <br>
+
+        <input type="datetime-local"
+               id="datetime"
+               name="datetime">
+
+        <br><br>
+
+        <!-- Week -->
+        <label for="week">Select Week</label>
+        <br>
+
+        <input type="week"
+               id="week"
+               name="week">
+
+        <br><br>
+
+        <!-- Month -->
+        <label for="month">Select Month</label>
+        <br>
+
+        <input type="month"
+               id="month"
+               name="month">
+
+        <br><br>
+
+        <!-- Range -->
+        <label for="amount">Car Loan Amount</label>
+        <br>
+
+        <input type="text"
+               id="loanAmount"
+               name="loanAmount"
+               readonly>
+
+        <br>
+
+        <input type="range"
+               id="amount"
+               name="amount"
+               min="0"
+               max="100000"
+               step="1000"
+               style="width:300px;"
+               oninput="loanAmount.value = amount.value">
+
+        <br><br>
+
+        <!-- Color -->
+        <label for="color">Select Color</label>
+        <br>
+
+        <input type="color"
+               id="color"
+               name="color"
+               oninput="pageBody.style.background = color.value">
+
+        <br><br>
+
+        <!-- Buttons -->
+        <button type="reset">Clear All</button>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
