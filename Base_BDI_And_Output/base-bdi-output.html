@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Base, BDI and Output</title>
+
+    <link rel="icon" href="logo.png">
+
+    <base href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/">
+</head>
+
+<body>
+
+    <h2>Demo on Base, BDI and Output Tags</h2>
+
+    <!-- Base Tag Images -->
+
+    <img src="AA28hbPd.img?w=768&h=432&m=6"
+         alt="Sample Image"
+         width="250">
+
+    <img src="AA28ew3P.img?w=768&h=432&m=6&x=547&y=122&s=148&d=148"
+         alt="Sample Image"
+         width="250">
+
+    <br><br>
+
+    <!-- BDI Tag -->
+
+    <bdi>Hello</bdi>
+
+    <br><br>
+
+    <!-- Output Tag -->
+
+    <output>Welcome</output>
+
+    <br><br>
+
+    <!-- Button -->
+
+    <button type="button"
+            onclick="document.write('button clicked')">
+
+        Click here
+
+    </button>
+
+    <br><br>
+
+    <!-- Output Update -->
+
+    <button type="button"
+            onclick="op.value += ' button pushed'">
+
+        Push here
+
+    </button>
+
+    <output id="op">Hi</output>
+
+</body>
+
+</html>
