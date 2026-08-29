@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+    <div style="
+        width: 300px;
+        background: black;
+        color: white;
+        border-radius: 15px;
+        padding: 15px;
+        margin: auto;
+        box-shadow: 0 0 15px 5px blue;
+    ">
+
+        <h2 align="center">
+            <u>Registration Form</u>
+        </h2>
+
+        <form id="registrationForm"
+              action="register.html"
+              autocomplete="off">
+
+            <!-- Full Name -->
+            <div>
+                <label for="fullname">Full Name</label>
+                <span>*</span>
+                <br>
+
+                <input type="text"
+                       id="fullname"
+                       name="fullname"
+                       placeholder="Full Name"
+                       required
+                       autofocus>
+            </div>
+
+            <br>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email ID</label>
+                <span>*</span>
+                <br>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+            </div>
+
+            <br>
+
+            <!-- Contact Number -->
+            <div>
+                <label for="phone">Contact Number</label>
+                <span>*</span>
+                <br>
+
+                <input type="number"
+                       id="phone"
+                       name="phone"
+                       min="6000000000"
+                       max="9999999999"
+                       required>
+            </div>
+
+            <br>
+
+            <!-- Date of Birth -->
+            <div>
+                <label for="dob">Date of Birth</label>
+                <br>
+
+                <input type="date"
+                       id="dob"
+                       name="dob"
+                       min="1996-07-18"
+                       max="2011-07-18">
+            </div>
+
+            <br>
+
+            <!-- Gender -->
+            <div>
+
+                <fieldset>
+
+                    <legend>Gender</legend>
+
+                    <input type="radio"
+                           id="male"
+                           name="gender"
+                           value="m">
+
+                    <label for="male">Male</label>
+
+                    <input type="radio"
+                           id="female"
+                           name="gender"
+                           value="f">
+
+                    <label for="female">Female</label>
+
+                    <input type="radio"
+                           id="others"
+                           name="gender"
+                           value="o">
+
+                    <label for="others">Others</label>
+
+                </fieldset>
+
+            </div>
+
+            <br>
+
+            <!-- Course -->
+            <div>
+
+                <label for="course">Which Course?</label>
+                <br>
+
+                <select id="course" name="course">
+
+                    <option value="JFS">
+                        Java Full Stack
+                    </option>
+
+                    <option value="PFS">
+                        Python Full Stack
+                    </option>
+
+                    <option value="DNFS">
+                        Dot.net Full Stack
+                    </option>
+
+                    <option value="UIFS" selected>
+                        UI Full Stack
+                    </option>
+
+                </select>
+
+            </div>
+
+            <br>
+
+            <!-- Mode of Training -->
+            <div>
+
+                <label for="trainingMode">
+                    Mode of Training
+                </label>
+
+                <br>
+
+                <select id="trainingMode" name="trainingMode">
+
+                    <option value="">
+                        Select Type of Training
+                    </option>
+
+                    <option value="ct">
+                        Classroom Training
+                    </option>
+
+                    <option value="ot">
+                        Online Training
+                    </option>
+
+                    <option value="pt">
+                        Project Training
+                    </option>
+
+                    <option value="pmt">
+                        Placement Training
+                    </option>
+
+                </select>
+
+            </div>
+
+            <br>
+
+            <!-- Terms -->
+            <div align="center">
+
+                <input type="checkbox"
+                       id="terms"
+                       name="terms"
+                       required>
+
+                <label for="terms">
+                    I Accepted all Terms and Conditions
+                </label>
+
+            </div>
+
+            <br>
+
+            <!-- Submit -->
+            <div align="center">
+
+                <button type="submit"
+                        id="submitButton"
+                        name="submitButton">
+
+                    Register Now
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
