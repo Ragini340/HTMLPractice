@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Playing Audio</title>
+
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+    <h2>Demo on Playing Audio</h2>
+
+    <!-- Audio using source tag -->
+    <audio controls>
+        <source src="files/Rai Rai.mp3"
+                type="audio/mp3">
+
+        This audio format is not supported by your browser.
+    </audio>
+
+    <br><br>
+
+    <!-- Audio using src attribute -->
+    <audio controls
+           src="files/Rai Rai.mp3">
+
+        This audio format is not supported by your browser.
+    </audio>
+
+    <br><br>
+
+    <!-- Muted, autoplay and loop -->
+    <audio controls
+           muted
+           autoplay
+           loop>
+
+        <source src="files/Neno Butterfly.mp3"
+                type="audio/mp3">
+
+        This audio format is not supported by your browser.
+    </audio>
+
+</body>
+
+</html>
