@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Playing Videos</title>
+
+    <link rel="icon" href="logo.svg">
+</head>
+
+<body>
+
+    <h2>Demo on Playing Videos</h2>
+
+    <!-- Basic Video -->
+    <video controls>
+        <source src="files/salaar.mp4" type="video/mp4">
+
+        Video format not supported.
+    </video>
+
+    <br><br>
+
+    <!-- Muted + Autoplay + Loop -->
+    <video controls muted autoplay loop>
+        <source src="files/Komuram Bheemudo.mp4" type="video/mp4">
+
+        Video format not supported.
+    </video>
+
+    <br><br>
+
+    <!-- Poster + Width + Height + Playsinline -->
+    <video controls
+           poster="images/rrr.jpg"
+           width="700"
+           height="480"
+           playsinline>
+
+        <source src="files/Naatu Naatu.mp4" type="video/mp4">
+
+        Video format not supported.
+    </video>
+
+    <br><br>
+
+    <!-- Video with Subtitles -->
+    <video controls>
+
+        <source src="files/Virupaksha-Telugu.mp4"
+                type="video/mp4">
+
+        <track src="english.vtt"
+               kind="subtitles"
+               srclang="english"
+               label="English"
+               default>
+
+        <track src="telugu.vtt"
+               kind="subtitles"
+               srclang="telugu"
+               label="Telugu">
+
+        Video format not supported.
+
+    </video>
+
+</body>
+
+</html>
